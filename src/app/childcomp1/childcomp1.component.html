@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-sm-7">
+    <div class="card">
+      <div class="card-header">
+        Data Binding
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">One Way data binding</h5>
+        <p class="card-text">1. Interpolation</p>
+        <p>My name is -> '{{name}}'.</p>
+        <p class="card-text">2. Property binding</p>
+        <button type="button" class="btn btn-primary" [disabled]="disvar">Propert Binding</button>
+        <p class="card-text">3. Event binding</p>
+        <a href="#" class="btn btn-primary" (click)="evnt()">Event Binding</a>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Two Way data binding</h5>
+        <p class="card-text">1. NgModel is used for two way binding</p>
+        <input type="text" placeholder="Enter your text" [(ngModel)]="value"/>
+        <label>{{value}}</label>
+
+      </div>
+    </div>
+  </div>
+</div>
